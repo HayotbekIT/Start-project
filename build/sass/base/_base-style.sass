@@ -1,0 +1,115 @@
+/*----- Базовый стилизация сайта от владельца -----*/
+body
+    font-family: 'PT Sans Narrow', sans-serif
+    font-weight: 400
+    color: #000000
+    background-color: #424242
+
+    background: #0f2027
+    background: -webkit-linear-gradient(to right, #2c5364,#203A43, #0F2027)
+
+.wrapper
+    max-width: 1170px
+    margin: 0 auto
+    text-align: center
+    padding-top: 50px
+
+.name
+    font-size: 36px
+    font-weight: 400
+    margin: 0
+    line-height: 1.5
+    font-family: 'Oranienbaum', cursive
+    color: #fff
+
+.title
+    font-size: 36px
+    font-weight: 400
+    margin: 0
+    line-height: 1.5
+    color: #fff
+
+.hidden
+    display: none
+
+.copyright
+    opacity: 0.5
+    margin-bottom: 50px
+
+    & > p
+        font-size: 18px
+        color: #fff
+    & > a
+        color: #fff
+        text-decoration: underline
+/*--- Иконка социал ----*/
+.social-wrapper
+    font-size: 12px
+    height: 120px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 10px
+
+.icon-box
+    height: 70px
+    width: 70px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+
+.social-wrapper .fa-stack
+    display: inline-block
+    vertical-align: middle
+
+.fa-instagram:before
+    top: -1px
+    position: relative
+
+.social-wrapper a
+    transition: 0.3s ease-in
+    opacity: 1
+    &:hover
+        font-size: 2.8em
+
+.color
+    &-vk
+        color: #587fa4
+    &-fb
+        color: #3b5998
+    &-tg
+        color: #0088cc
+    &-insta
+        color: #e4405f
+    &-mail
+        color: #168de2
+    &-github
+        color: #333
+
+/* --- Стиди для фото --- */
+.photo
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 70px
+
+.photo img
+    display: none
+
+
+
+.instafeed
+    width: 640px
+    height: 620px
+    overflow: hidden
+    transition: opacity 1s ease-in, box-shadow 3s ease-in
+    opacity: 0
+
+.instafeed a
+    display: none
+
+.shadowed
+    opacity: 1
+    box-shadow: 0px 18px 55px 0px rgba(0,0,0,0.4)

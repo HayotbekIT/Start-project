@@ -1,0 +1,245 @@
+@charset "UTF-8";
+html, body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body > * {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+a, abbr {
+  text-decoration: none;
+}
+
+input, button, textarea {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* *::after,*::before,*[class*=""]::after,*[class*=""]::before
+ *  content: ''
+ *  display: block
+ *  background-image: url("")
+ *  background-position: center
+ *  background-repeat: no-repeat */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+dialog {
+  border-radius: 5px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+output {
+  border: 1px solid #000;
+  padding: 5px;
+  display: block;
+  width: 100%;
+}
+
+video, audio {
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+/*----- Выбор по классом -----*/
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.inner-page {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wigdet > * > * + *, .wighet > * > * + * {
+  margin-top: 15px;
+}
+
+/*----- Базовый стилизация сайта от владельца -----*/
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  background-color: #424242;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203A43, #0F2027);
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.name {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Oranienbaum", cursive;
+  color: #fff;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.copyright {
+  opacity: 0.5;
+  margin-bottom: 50px;
+}
+.copyright > p {
+  font-size: 18px;
+  color: #fff;
+}
+.copyright > a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*--- Иконка социал ----*/
+.social-wrapper {
+  font-size: 12px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.icon-box {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social-wrapper .fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fa-instagram:before {
+  top: -1px;
+  position: relative;
+}
+
+.social-wrapper a {
+  transition: 0.3s ease-in;
+  opacity: 1;
+}
+.social-wrapper a:hover {
+  font-size: 2.8em;
+}
+
+.color-vk {
+  color: #587fa4;
+}
+.color-fb {
+  color: #3b5998;
+}
+.color-tg {
+  color: #0088cc;
+}
+.color-insta {
+  color: #e4405f;
+}
+.color-mail {
+  color: #168de2;
+}
+.color-github {
+  color: #333;
+}
+
+/* --- Стиди для фото --- */
+.photo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.photo img {
+  display: none;
+}
+
+.instafeed {
+  width: 640px;
+  height: 620px;
+  overflow: hidden;
+  transition: opacity 1s ease-in, box-shadow 3s ease-in;
+  opacity: 0;
+}
+
+.instafeed a {
+  display: none;
+}
+
+.shadowed {
+  opacity: 1;
+  box-shadow: 0px 18px 55px 0px rgba(0, 0, 0, 0.4);
+}
